@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #EEE;
+}
+a {
+  color: #00b7ff;
+}
+
+.image {
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+}
+.image img {
+	width: 300px;
+	height: auto;
+}
+
+.colors {
+	display: flex;
+	margin: 20px 0;
+}
+input[type=radio] {
+	display: block;
+	height: 40px;
+	width: 40px;
+	margin: 0;
+	outline: none;
+	-webkit-appearance: none;
+}
+input[type="radio"]:checked {
+	border: 3px solid black;
+}
+input[type=submit] {
+	display: block;
+	background: black;
+	color: white;
+	border: 0;
+	padding: 15px;
+	font-weight: bold;
+}

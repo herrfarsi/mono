@@ -1,0 +1,19 @@
+extends layout
+
+block content
+	form(name="uploader", action="/", method="post", enctype="multipart/form-data")
+		label.dropzone
+			input(type="file", name="upload", id="file")
+		div.colors
+			input(type="radio", name="color", value="#E0C008", style="background-color:#E0C008", checked)
+			input(type="radio", name="color", value="#FF8600", style="background-color:#FF8600")
+			input(type="radio", name="color", value="#EC0000", style="background-color:#EC0000")
+			input(type="radio", name="color", value="#FF3674", style="background-color:#FF3674")
+			input(type="radio", name="color", value="#ED50A1", style="background-color:#ED50A1")
+			input(type="radio", name="color", value="#C328E1", style="background-color:#C328E1")
+			input(type="radio", name="color", value="#3C74FF", style="background-color:#3C74FF")
+			input(type="radio", name="color", value="#2DA8CC", style="background-color:#2DA8CC")
+			input(type="radio", name="color", value="#2AB7AB", style="background-color:#2AB7AB")
+		input(type="submit", value="COLORIZE")
+	a(href="#{image}", target="_blank", class="image")
+		img(src="#{image}")
